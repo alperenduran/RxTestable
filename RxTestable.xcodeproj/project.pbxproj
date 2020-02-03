@@ -3,17 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD38BE4623E8830A00795101 /* Cartography in Frameworks */ = {isa = PBXBuildFile; productRef = AD38BE4523E8830A00795101 /* Cartography */; };
+		AD38BE4E23E88C2300795101 /* With.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD38BE4D23E88C2300795101 /* With.swift */; };
+		AD38BE5123E8A52000795101 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = AD38BE5023E8A52000795101 /* RxTest */; };
+		AD38BE5523E8ACD800795101 /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD38BE5423E8ACD800795101 /* UIStackViewExtension.swift */; };
+		AD5F91A023E8AF9800DD9597 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5F919F23E8AF9800DD9597 /* TestHelpers.swift */; };
+		AD864CE023B167C90040A915 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AD864CDF23B167C90040A915 /* RxSwift */; };
+		AD864CE223B167C90040A915 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = AD864CE123B167C90040A915 /* RxCocoa */; };
 		ADFB93D323B15B6F00515404 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB93D223B15B6F00515404 /* AppDelegate.swift */; };
 		ADFB93D523B15B6F00515404 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB93D423B15B6F00515404 /* SceneDelegate.swift */; };
 		ADFB93D723B15B6F00515404 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB93D623B15B6F00515404 /* ViewController.swift */; };
-		ADFB93DA23B15B6F00515404 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADFB93D823B15B6F00515404 /* Main.storyboard */; };
 		ADFB93DC23B15B7300515404 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADFB93DB23B15B7300515404 /* Assets.xcassets */; };
 		ADFB93DF23B15B7300515404 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADFB93DD23B15B7300515404 /* LaunchScreen.storyboard */; };
 		ADFB93EA23B15B7300515404 /* RxTestableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB93E923B15B7300515404 /* RxTestableTests.swift */; };
+		ADFB93F523B15B9000515404 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB93F423B15B9000515404 /* ViewModel.swift */; };
+		ADFB93F723B15B9B00515404 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFB93F623B15B9B00515404 /* View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +35,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD38BE4D23E88C2300795101 /* With.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = With.swift; sourceTree = "<group>"; };
+		AD38BE5423E8ACD800795101 /* UIStackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
+		AD5F919F23E8AF9800DD9597 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 		ADFB93CF23B15B6F00515404 /* RxTestable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxTestable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADFB93D223B15B6F00515404 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADFB93D423B15B6F00515404 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ADFB93D623B15B6F00515404 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ADFB93D923B15B6F00515404 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADFB93DB23B15B7300515404 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADFB93DE23B15B7300515404 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADFB93E023B15B7300515404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADFB93E523B15B7300515404 /* RxTestableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxTestableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADFB93E923B15B7300515404 /* RxTestableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTestableTests.swift; sourceTree = "<group>"; };
 		ADFB93EB23B15B7300515404 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADFB93F423B15B9000515404 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		ADFB93F623B15B9B00515404 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +57,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD38BE5123E8A52000795101 /* RxTest in Frameworks */,
+				AD864CE223B167C90040A915 /* RxCocoa in Frameworks */,
+				AD38BE4623E8830A00795101 /* Cartography in Frameworks */,
+				AD864CE023B167C90040A915 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +74,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD38BE4F23E8A52000795101 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ADFB93C623B15B6F00515404 = {
 			isa = PBXGroup;
 			children = (
 				ADFB93D123B15B6F00515404 /* RxTestable */,
 				ADFB93E823B15B7300515404 /* RxTestableTests */,
 				ADFB93D023B15B6F00515404 /* Products */,
+				AD38BE4F23E8A52000795101 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,11 +105,14 @@
 			children = (
 				ADFB93D223B15B6F00515404 /* AppDelegate.swift */,
 				ADFB93D423B15B6F00515404 /* SceneDelegate.swift */,
-				ADFB93D623B15B6F00515404 /* ViewController.swift */,
-				ADFB93D823B15B6F00515404 /* Main.storyboard */,
 				ADFB93DB23B15B7300515404 /* Assets.xcassets */,
 				ADFB93DD23B15B7300515404 /* LaunchScreen.storyboard */,
 				ADFB93E023B15B7300515404 /* Info.plist */,
+				ADFB93D623B15B6F00515404 /* ViewController.swift */,
+				ADFB93F423B15B9000515404 /* ViewModel.swift */,
+				ADFB93F623B15B9B00515404 /* View.swift */,
+				AD38BE4D23E88C2300795101 /* With.swift */,
+				AD38BE5423E8ACD800795101 /* UIStackViewExtension.swift */,
 			);
 			path = RxTestable;
 			sourceTree = "<group>";
@@ -95,6 +122,7 @@
 			children = (
 				ADFB93E923B15B7300515404 /* RxTestableTests.swift */,
 				ADFB93EB23B15B7300515404 /* Info.plist */,
+				AD5F919F23E8AF9800DD9597 /* TestHelpers.swift */,
 			);
 			path = RxTestableTests;
 			sourceTree = "<group>";
@@ -115,6 +143,12 @@
 			dependencies = (
 			);
 			name = RxTestable;
+			packageProductDependencies = (
+				AD864CDF23B167C90040A915 /* RxSwift */,
+				AD864CE123B167C90040A915 /* RxCocoa */,
+				AD38BE4523E8830A00795101 /* Cartography */,
+				AD38BE5023E8A52000795101 /* RxTest */,
+			);
 			productName = RxTestable;
 			productReference = ADFB93CF23B15B6F00515404 /* RxTestable.app */;
 			productType = "com.apple.product-type.application";
@@ -165,6 +199,10 @@
 				Base,
 			);
 			mainGroup = ADFB93C623B15B6F00515404;
+			packageReferences = (
+				AD864CDE23B167C90040A915 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				AD38BE4423E8830A00795101 /* XCRemoteSwiftPackageReference "Cartography" */,
+			);
 			productRefGroup = ADFB93D023B15B6F00515404 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -182,7 +220,6 @@
 			files = (
 				ADFB93DF23B15B7300515404 /* LaunchScreen.storyboard in Resources */,
 				ADFB93DC23B15B7300515404 /* Assets.xcassets in Resources */,
-				ADFB93DA23B15B6F00515404 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +238,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADFB93D723B15B6F00515404 /* ViewController.swift in Sources */,
+				AD38BE4E23E88C2300795101 /* With.swift in Sources */,
 				ADFB93D323B15B6F00515404 /* AppDelegate.swift in Sources */,
+				ADFB93F723B15B9B00515404 /* View.swift in Sources */,
+				AD38BE5523E8ACD800795101 /* UIStackViewExtension.swift in Sources */,
+				ADFB93F523B15B9000515404 /* ViewModel.swift in Sources */,
 				ADFB93D523B15B6F00515404 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADFB93EA23B15B7300515404 /* RxTestableTests.swift in Sources */,
+				AD5F91A023E8AF9800DD9597 /* TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +267,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		ADFB93D823B15B6F00515404 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ADFB93D923B15B6F00515404 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ADFB93DD23B15B7300515404 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -372,7 +406,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alperenduran.RxTestable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -390,7 +424,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alperenduran.RxTestable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -469,6 +503,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD38BE4423E8830A00795101 /* XCRemoteSwiftPackageReference "Cartography" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/robb/Cartography";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		AD864CDE23B167C90040A915 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD38BE4523E8830A00795101 /* Cartography */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD38BE4423E8830A00795101 /* XCRemoteSwiftPackageReference "Cartography" */;
+			productName = Cartography;
+		};
+		AD38BE5023E8A52000795101 /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD864CDE23B167C90040A915 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+		AD864CDF23B167C90040A915 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD864CDE23B167C90040A915 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		AD864CE123B167C90040A915 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD864CDE23B167C90040A915 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ADFB93C723B15B6F00515404 /* Project object */;
 }

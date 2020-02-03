@@ -7,28 +7,47 @@
 //
 
 import XCTest
+import RxTest
+import RxSwift
+import RxCocoa
+
 @testable import RxTestable
 
 class RxTestableTests: XCTestCase {
-
+    var input: Input!
+    let viewModel = viewModel(input:)
+    var scheduler: TestScheduler!
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
+        
+        scheduler = TestScheduler(
+            initialClock: 0,
+            resolution: 0.1,
+            simulateProcessingDelay: false
+        )
+        
+        input = .never()
     }
-
+    
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        super.tearDown()
+        
+        input = nil
+        scheduler = nil
+        
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func test__it_shows_hello_world_when_button_tapped() {
+        input = with(input) {
+            $0 = scheduler.createHotObservable([.next(5, ())]).asObservable()
         }
+        
+        let output = viewModel(input)
+        let text = scheduler.record(source: output)
+        
+        scheduler.start()
+        
+        XCTAssertEqual(text.events, [.next(5, "Hello World!")])
     }
-
 }
